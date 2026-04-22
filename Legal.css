@@ -149,6 +149,20 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+/* Fallback background image for hero */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('statue_row.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -345,6 +359,86 @@ section {
     background: linear-gradient(180deg, var(--deep-black) 0%, var(--dark-blue) 100%);
 }
 
+/* Why Choose Us Section */
+.why-choose-us {
+    background: linear-gradient(180deg, var(--dark-blue) 0%, var(--dark-mahogany) 100%);
+    padding: 100px 0;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.why-choose-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(10, 25, 41, 0.5) 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.4s ease;
+}
+
+.why-choose-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold-accent);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.3);
+}
+
+.why-choose-image {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.why-choose-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.why-choose-item:hover .why-choose-image img {
+    transform: scale(1.1);
+}
+
+.why-choose-content {
+    padding: 40px 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-choose-content h3 {
+    font-size: 1.8rem;
+    color: var(--gold-accent);
+    margin-bottom: 15px;
+}
+
+.why-choose-content p {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    line-height: 1.8;
+}
+
+@media (max-width: 968px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-choose-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-choose-content {
+        padding: 30px;
+    }
+}
+
 .about-content {
     max-width: 900px;
     margin: 0 auto;
@@ -537,8 +631,14 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;  /* <-- ADD THIS LINE */
     transition: transform 0.4s ease;
 }
+
+.team-card:nth-child(3) .team-image img {
+    object-position: center 30%;
+}
+
 
 .team-card:hover .team-image img {
     transform: scale(1.1);

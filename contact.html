@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Sterling & Chen Law Group</title>
+<meta name="description" content="Contact Sterling & Chen Law Group in Phoenix, Arizona to schedule a consultation. Call, email, or send us a message.">
+<link rel="stylesheet" href="Legal.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-mark">
+      <span class="logo-name">Sterling &amp; Chen</span>
+      <span class="logo-sub">Law Group</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary" id="primaryNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+      <a href="index.html#faq" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-accent nav-cta mobile-only">Free Consultation</a>
+    </nav>
+    <a href="contact.html" class="btn btn-accent nav-cta desktop-only">Free Consultation</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header">
+  <div class="page-header-media">
+    <img src="writing.jpg" alt="" class="page-header-img">
+    <div class="page-header-overlay"></div>
+  </div>
+  <div class="container page-header-inner">
+    <span class="breadcrumb"><a href="index.html">Home</a> / Contact</span>
+    <h1>Get in Touch</h1>
+    <p>Tell us a bit about your situation and we'll follow up to schedule your consultation.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT FORM + INFO ============ -->
+<section class="contact-section">
+  <div class="container contact-grid">
+
+    <div id="contact-form">
+      <div class="contact-form-card">
+        <h2 style="font-size:24px; margin-bottom:8px;">Send Us a Message</h2>
+        <p style="margin-bottom:26px; font-size:15px;">Fill out the form below and we'll respond within one business day.</p>
+
+        <form id="contactForm" novalidate>
+          <!-- Honeypot field: real visitors never see or fill this in -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-two-col">
+            <div class="form-row">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Jane Doe" required autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" name="phone" placeholder="(602) 555-0100" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="jane@email.com" required autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <label for="contactService">Practice Area <span style="font-weight:400; text-transform:none; letter-spacing:0;">(optional)</span></label>
+            <select id="contactService" name="service">
+              <option value="">Select one&hellip;</option>
+              <option value="Business & Corporate Law">Business &amp; Corporate Law</option>
+              <option value="Estate Planning & Probate">Estate Planning &amp; Probate</option>
+              <option value="Family Law">Family Law</option>
+              <option value="Real Estate Law">Real Estate Law</option>
+              <option value="Not sure / other">Not sure / other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" placeholder="Tell us briefly about your situation..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block">Send Message</button>
+          <p class="form-note">This form opens your email client to send your message directly to our office. We don't process payments or bookings here — we'll follow up personally to schedule your consultation.</p>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="info-card">
+        <h3>Office Information</h3>
+
+        <div class="info-row">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <address>
+            <a href="https://www.google.com/maps/search/?api=1&query=2828+N+Central+Ave+Suite+1100+Phoenix+AZ+85004" target="_blank" rel="noopener noreferrer">
+              2828 N Central Ave, Suite 1100<br>Phoenix, AZ 85004
+            </a>
+          </address>
+        </div>
+
+        <div class="info-row">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></svg>
+          <a href="tel:+16025550134">(602) 555-0134</a>
+        </div>
+
+        <div class="info-row">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          <a href="mailto:info@sterlingchenlaw.com">info@sterlingchenlaw.com</a>
+        </div>
+
+        <div class="info-row">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <table class="hours-table">
+            <tr><td>Monday&ndash;Friday</td><td>8:30 AM&ndash;5:30 PM</td></tr>
+            <tr><td>Saturday</td><td>By appointment</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+
+        <div class="info-row" style="margin-top:6px;">
+          <div class="social-row">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on LinkedIn (opens in a new tab)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on Facebook (opens in a new tab)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on Instagram (opens in a new tab)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 3l-1.5 2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.5L15 3H9zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on X (opens in a new tab)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.6 22H1.5l8.1-9.3L1 2h7l4.9 6L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame-wrap">
+        <iframe
+          src="https://maps.google.com/maps?q=2828%20N%20Central%20Ave%2C%20Phoenix%2C%20AZ%2085004&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          title="Map showing the Sterling & Chen Law Group office location"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=2828+N+Central+Ave+Suite+1100+Phoenix+AZ+85004" target="_blank" rel="noopener noreferrer" class="map-link">Get Directions →</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo-mark">
+          <span class="logo-name">Sterling &amp; Chen</span>
+          <span class="logo-sub">Law Group</span>
+        </a>
+        <p class="footer-tagline">Trusted legal counsel for business, family, and property matters across Arizona.</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on LinkedIn (opens in a new tab)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on Facebook (opens in a new tab)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on Instagram (opens in a new tab)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 3l-1.5 2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.5L15 3H9zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sterling & Chen Law Group on X (opens in a new tab)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.6 22H1.5l8.1-9.3L1 2h7l4.9 6L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Firm</span>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="services.html" class="footer-link">Services</a>
+        <a href="index.html#testimonials" class="footer-link">Testimonials</a>
+        <a href="index.html#faq" class="footer-link">FAQ</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Practice Areas</span>
+        <a href="services.html#business-law" class="footer-link">Business &amp; Corporate Law</a>
+        <a href="services.html#estate-planning" class="footer-link">Estate Planning &amp; Probate</a>
+        <a href="services.html#family-law" class="footer-link">Family Law</a>
+        <a href="services.html#real-estate" class="footer-link">Real Estate Law</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Contact</span>
+        <p class="footer-contact-item">
+          <a href="https://www.google.com/maps/search/?api=1&query=2828+N+Central+Ave+Suite+1100+Phoenix+AZ+85004" target="_blank" rel="noopener noreferrer">2828 N Central Ave, Suite 1100<br>Phoenix, AZ 85004</a>
+        </p>
+        <p class="footer-contact-item"><a href="tel:+16025550134">(602) 555-0134</a></p>
+        <p class="footer-contact-item"><a href="mailto:info@sterlingchenlaw.com">info@sterlingchenlaw.com</a></p>
+        <p class="footer-contact-item">Mon&ndash;Fri: 8:30 AM&ndash;5:30 PM<br>Sat: By appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-fine">&copy; 2026 Sterling &amp; Chen Law Group. Attorney Advertising. Prior results do not guarantee a similar outcome.</span>
+      <div class="footer-fine-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="Legal.js"></script>
+</body>
+</html>
